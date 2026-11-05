@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Melza Beauty Spa — Audit Dossier | Tiyan Digital</title>
+<meta name="description" content="A teardown audit of melzabeautyspa.co.za for Melza Beauty Spa, Meadowlands, Soweto: 8 findings from the live site and Fresha, and a fix plan. Prepared by Tiyan Digital, November 2026.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="Melza Beauty Spa audit dossier — home">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-text"><strong data-biz>Melza Beauty Spa</strong><span>Audit Dossier</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="index.html" aria-current="page">01 Audit Overview</a></li>
+      <li><a href="findings.html">02 8 Findings</a></li>
+      <li><a href="plan.html">03 Fix Plan</a></li>
+      <li><a class="btn btn-terra nav-cta" href="plan.html#contact">Book a call</a></li>
+    </ul>
+    <a class="btn btn-terra nav-cta nav-cta-desktop" href="plan.html#contact">Book a call</a>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Contradicting Hours <i>•</i> Expired Specials <i>•</i> Duplicated Content <i>•</i> Garbled Headline <i>•</i> JS Crawler Trap <i>•</i> Address Drift <i>•</i> Hidden Reviews <i>•</i> No Booking CTA <i>•</i></span>
+    <span>Contradicting Hours <i>•</i> Expired Specials <i>•</i> Duplicated Content <i>•</i> Garbled Headline <i>•</i> JS Crawler Trap <i>•</i> Address Drift <i>•</i> Hidden Reviews <i>•</i> No Booking CTA <i>•</i></span>
+  </div>
+</div>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="dark hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow reveal"><span class="dot">●</span> Verified Audit Dossier // November 2026 // Meadowlands, Soweto</p>
+        <h1 class="reveal reveal-d1"><span class="line">Your Website Has</span><span class="line">The Traffic.</span><span class="line"><em>It Is Leaking</em></span><span class="line"><em>The Bookings.</em></span></h1>
+        <p class="lede reveal reveal-d2">A teardown report for <span data-biz>Melza Beauty Spa</span> at 30087 Tshendehulu Street, Meadowlands, Soweto — documenting the discrepancies between your live website, your Fresha profile, and what Google sees, and what each one costs in bookings.</p>
+        <div class="hero-actions reveal reveal-d3">
+          <a class="btn btn-terra" href="findings.html">See the 8 findings <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost-light" href="plan.html">Skip to the fix plan</a>
+        </div>
+        <p class="hero-meta reveal reveal-d3">Prepared by Tiyan Digital<br>Sources: melzabeautyspa.co.za (live, 5 Nov 2026) · Fresha public listings</p>
+      </div>
+      <aside class="dossier-card reveal reveal-d2" aria-label="Dossier summary">
+        <p class="card-label">Dossier Volume</p>
+        <p class="card-label">Live Findings</p>
+        <p class="dossier-num" aria-label="8 documented faults">08</p>
+        <p class="dossier-num-sub">Documented Faults</p>
+        <ul class="dossier-rows">
+          <li><b>01 Critical Issue</b><span>Blocking</span></li>
+          <li><b>03 High Priority</b><span>Revenue Leak</span></li>
+          <li><b>04 Medium Priority</b><span>Crawl / NAP</span></li>
+        </ul>
+        <p class="card-label">Local Jurisdiction</p>
+        <p class="dossier-addr"><b>30087 Tshendehulu St, Meadowlands</b><br>Soweto, Gauteng, South Africa</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Glow Score — dial with NO numeric score (the audit documents findings, it does not invent a score) -->
+  <section class="dark-deep score-band">
+    <div class="wrap">
+      <div class="score-card reveal">
+        <div class="dial" role="img" aria-label="Glow Score dial — no numeric score assigned; the audit documents 8 findings instead">
+          <svg viewBox="0 0 208 208" aria-hidden="true">
+            <circle class="dial-ring-bg" cx="104" cy="104" r="92"></circle>
+            <circle class="dial-ring" cx="104" cy="104" r="92"></circle>
+          </svg>
+          <div class="dial-center">
+            <span class="dial-word">Glow<br><em>Score</em></span>
+            <span class="dial-sub">Audit Dossier</span>
+          </div>
+        </div>
+        <div class="score-copy">
+          <p class="eyebrow"><span class="dot">●</span> Evaluative Benchmark</p>
+          <h2>Glow Score</h2>
+          <p class="lede">Algorithmic SEO, mobile page stability, booking-loop validation, and NAP local consistency — assessed finding by finding, not reduced to a single invented number.</p>
+          <p class="lede">Every issue below is live on your site right now, and each one can be checked in under a minute from the links on the findings page.</p>
+          <p class="score-caption">8 findings documented — see below</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fresha comparison -->
+  <section class="dark">
+    <div class="wrap">
+      <div class="compare-panel reveal">
+        <p class="eyebrow"><span class="dot">●</span> The Fresha Conversion Gap</p>
+        <h2>High-Value Rituals.<br><em>Invisible Social Proof.</em></h2>
+        <p class="lede">You deliver high-end treatments in Meadowlands — from R350 Swedish massages to R1,300 IV vitamin infusions — yet the proof of that work never reaches your own website.</p>
+        <div class="compare-rows">
+          <div class="compare-row">
+            <div class="compare-row-head">
+              <h3>Melza Beauty Spa — live Fresha profile</h3>
+              <span class="stars" aria-label="4.4 out of 5 stars">4.4★ <small>(5 reviews)</small></span>
+            </div>
+            <div class="bar-track" role="img" aria-label="Melza: 5 reviews on Fresha, compared with 39 to 83 reviews for nearby salons"><div class="bar-fill melza" style="--w:7%"></div></div>
+            <p class="compare-note"><b>Critical bottleneck:</b> zero reviews embedded on high-intent booking paths. Your 4.4★ rating lives only on Fresha — visitors to your own site never see it.</p>
+          </div>
+          <div class="compare-row">
+            <div class="compare-row-head">
+              <h3>Top-ranked Soweto salons on the same Fresha pages</h3>
+              <span class="stars" aria-label="4.9 out of 5 stars">4.9★ <small>(39–83 reviews)</small></span>
+            </div>
+            <div class="bar-track" role="img" aria-label="Nearby Soweto salons: 39 to 83 reviews on Fresha"><div class="bar-fill peers" style="--w:100%"></div></div>
+            <p class="compare-note"><b>Competitive lead:</b> review counts in this range show up directly on Google local results — the first thing a searching client compares.</p>
+          </div>
+        </div>
+        <p class="compare-foot">Source: Fresha public category listings, Johannesburg / Meadowlands, checked 5 Nov 2026.<br>Bar length = number of reviews shown on Fresha (5 vs 39–83).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Field observation image band -->
+  <section class="dark-deep figure-band">
+    <figure class="reveal">
+      <img src="assets/img/spa-room-1.jpg" alt="Warm, dim spa treatment room with a massage table, wooden screens and plants" width="1600" height="1000" loading="lazy">
+      <figcaption>Field Observation: Ambience Validation — 30087 Tshendehulu St · Sanctuary Integrity</figcaption>
+    </figure>
+  </section>
+  <section class="dark" style="padding-top:0">
+    <div class="wrap">
+      <h3 class="reveal">World-Class Craft, Obscured by Architecture</h3>
+      <p class="lede reveal">The physical space in Meadowlands — warm earth tones, herbal treatments, careful attention to the client — is the part you already do well. The website is the part that hides it: the room earns the booking, but the site has to let the client reach the room first.</p>
+      <p class="img-caption reveal">Illustrative imagery — AI-generated sample. Your real photos go here.</p>
+    </div>
+  </section>
+
+  <!-- Findings ledger -->
+  <section class="on-cream">
+    <div class="wrap">
+      <div class="ledger-head">
+        <div>
+          <p class="eyebrow reveal"><span class="dot">●</span> Technical Debt Ledger</p>
+          <h2 class="reveal">The 8 Discovered Findings</h2>
+        </div>
+        <p class="lede reveal">Isolated from live pages on melzabeautyspa.co.za and public Fresha listings, checked 5 November 2026.</p>
+      </div>
+      <div class="ledger">
+        <a class="ledger-row reveal" href="findings.html#finding-01">
+          <span class="num">01</span>
+          <span><h3>Opening hours contradict themselves across pages</h3><p>The pricing page says Sunday closed; the massage pages say open Sunday and closed Monday. The two pages disagree.</p></span>
+          <span class="chip chip-critical">Critical · Blocks walk-ins</span>
+        </a>
+        <a class="ledger-row reveal" href="findings.html#finding-02">
+          <span class="num">02</span>
+          <span><h3>Expired specials still live from September 2025</h3><p>A “Spring Glow Special” that ended 30 September 2025 is still displayed on the homepage in November 2026.</p></span>
+          <span class="chip chip-high">High Priority</span>
+        </a>
+        <a class="ledger-row reveal" href="findings.html#finding-03">
+          <span class="num">03</span>
+          <span><h3>Duplicated “Couples Bliss” content block</h3><p>The same package block appears twice on the homepage, word for word.</p></span>
+          <span class="chip chip-medium">Medium</span>
+        </a>
+        <a class="ledger-row reveal" href="findings.html#finding-04">
+          <span class="num">04</span>
+          <span><h3>Garbled headline text in couples section</h3><p>A headline reads “Reconnect &amp; Relax Together in Meadowlandsying quality time together” — two sentences run together.</p></span>
+          <span class="chip chip-medium">Medium</span>
+        </a>
+        <a class="ledger-row reveal" href="findings.html#finding-05">
+          <span class="num">05</span>
+          <span><h3>“Loading your guides...” JS crawler trap</h3><p>The Glow Guide blog section is JavaScript-dependent and renders empty for crawlers and on failure.</p></span>
+          <span class="chip chip-medium">Medium</span>
+        </a>
+        <a class="ledger-row reveal" href="findings.html#finding-06">
+          <span class="num">06</span>
+          <span><h3>Address spelling drift: “Tshendehulu” vs “Tsendehulu”</h3><p>The street name is spelled two different ways across your own pages — a NAP inconsistency Google can read as two places.</p></span>
+          <span class="chip chip-medium">Medium</span>
+        </a>
+        <a class="ledger-row reveal" href="findings.html#finding-07">
+          <span class="num">07</span>
+          <span><h3>4.4★ reviews never surface on website</h3><p>Your Fresha rating stays behind a third-party listing; your own site shows no review proof anywhere.</p></span>
+          <span class="chip chip-high">High Priority</span>
+        </a>
+        <a class="ledger-row reveal" href="findings.html#finding-08">
+          <span class="num">08</span>
+          <span><h3>10+ blog articles with no booking conversion path</h3><p>Content draws readers in, then ends with no sticky booking button, no structured FAQ, and nothing built for AI search.</p></span>
+          <span class="chip chip-high">High Priority</span>
+        </a>
+      </div>
+      <div class="ledger-cta">
+        <a class="btn btn-terra" href="findings.html">Explore 8 findings with live evidence <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we checked -->
+  <section class="dark" id="checked">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="dot">●</span> Audit Architecture</p>
+      <h2 class="reveal">What We Checked</h2>
+      <p class="lede reveal">Four distinct passes across your public pages, your Fresha profile, and the local Soweto search results — all from live sources, checked 5 November 2026.</p>
+      <div class="checked-grid">
+        <article class="checked-card reveal">
+          <p class="icon" aria-hidden="true">&lt;/&gt;</p>
+          <h3>Crawlability &amp; JS Rendering</h3>
+          <p>How search bots read your pages: JavaScript-dependent sections, empty states, and whether treatment descriptions reach the index at all.</p>
+          <p class="status">Status: Flagged JS traps</p>
+        </article>
+        <article class="checked-card reveal reveal-d1">
+          <p class="icon" aria-hidden="true">◎</p>
+          <h3>NAP &amp; Local Geo Consistency</h3>
+          <p>Name, address and phone compared across your own pages, Fresha, and local listings — checking that every source spells the same business the same way.</p>
+          <p class="status">Status: Drift detected</p>
+        </article>
+        <article class="checked-card reveal reveal-d2">
+          <p class="icon" aria-hidden="true">↗</p>
+          <h3>Conversion Architecture</h3>
+          <p>The path from arrival to booking: where the booking button sits, whether proof appears before the price, and how many taps a phone visitor needs.</p>
+          <p class="status">Status: High drop-off</p>
+        </article>
+        <article class="checked-card reveal reveal-d3">
+          <p class="icon" aria-hidden="true">▦</p>
+          <h3>Schema &amp; AI Search Readiness</h3>
+          <p>Whether your pages carry the structured answers AI search and voice assistants need — FAQs, treatment facts, and local anchors in a form machines can quote.</p>
+          <p class="status">Status: Unindexed entity</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="dark-deep cta-band">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="dot">●</span> Next Step</p>
+      <h2 class="reveal">Ready to close the Soweto booking gap?</h2>
+      <p class="lede reveal">The fix plan is prepared — three tiers, mapped to the eight findings, starting with the quick wins that cost nothing but attention.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-terra" href="plan.html">Review the fix plan <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost-light" href="findings.html">Re-examine the findings</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Official Technical Audit Report</h3>
+        <p>Prepared by Tiyan Digital for <span data-biz>Melza Beauty Spa</span> (30087 Tshendehulu St, Meadowlands, Soweto). Based on a live review of melzabeautyspa.co.za and public Fresha listings, November 2026.</p>
+        <p class="mono-line">Security classification<br>Restricted recipient access</p>
+      </div>
+      <div>
+        <h3>Dossier</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">01 Audit Overview</a></li>
+          <li><a href="findings.html">02 8 Findings</a></li>
+          <li><a href="plan.html">03 Fix Plan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="index.html#checked">Methodology</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Melza Beauty Spa Dossier</span>
+      <span>Prepared by Tiyan Digital · November 2026</span>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

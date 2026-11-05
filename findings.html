@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>8 Findings — Melza Beauty Spa Audit Dossier | Tiyan Digital</title>
+<meta name="description" content="All 8 findings from the Melza Beauty Spa teardown audit, with live evidence from melzabeautyspa.co.za and Fresha: hours, expired specials, duplicated content, JS crawler trap, NAP drift, hidden reviews, dead-end blog.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="Melza Beauty Spa audit dossier — home">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-text"><strong data-biz>Melza Beauty Spa</strong><span>Audit Dossier</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="index.html">01 Audit Overview</a></li>
+      <li><a href="findings.html" aria-current="page">02 8 Findings</a></li>
+      <li><a href="plan.html">03 Fix Plan</a></li>
+      <li><a class="btn btn-terra nav-cta" href="plan.html#contact">Book a call</a></li>
+    </ul>
+    <a class="btn btn-terra nav-cta nav-cta-desktop" href="plan.html#contact">Book a call</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="dark page-head">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="dot">●</span> Dossier Evidence File // November 2026</p>
+      <p class="eyebrow reveal">Section 02 // Technical &amp; Editorial Evidence</p>
+      <h1 class="reveal reveal-d1">8 Discrepancies Costing You Bookings Every Single Week.</h1>
+      <p class="lede reveal reveal-d2">Every finding documented below is live right now on melzabeautyspa.co.za or public search aggregators. Each one links to the page where you can see it yourself.</p>
+      <div class="severity-strip reveal">
+        <div class="severity-cell"><p class="sev-num">1</p><p class="sev-label">Critical — blocks bookings</p></div>
+        <div class="severity-cell"><p class="sev-num">3</p><p class="sev-label">High impact — revenue leak</p></div>
+        <div class="severity-cell"><p class="sev-num">4</p><p class="sev-label">Medium — SEO &amp; index</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-deep" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="reveal">World-class botanical spa treatments let down by website fracture points.</h2>
+      <p class="lede reveal">Clients experience peaceful Meadowlands earth tones, warm herbal treatments, and specialised care in the treatment room. The website should carry that same care — right now it carries contradictions instead.</p>
+      <figure class="reveal" style="margin:40px 0 0">
+        <img src="assets/img/spa-room-3.jpg" alt="Warm spa treatment room with wooden screen divider, massage table and plants" width="1600" height="1000" loading="lazy" style="border-radius:4px">
+        <figcaption class="img-caption">30087 Tshendehulu St // Active clinic — Illustrative imagery, AI-generated sample. Your real photos go here.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="jump-bar">
+    <div class="wrap jump-inner">
+      <span class="jump-label">Jump to finding:</span>
+      <a class="jump-link" href="#finding-01">01 · Critical</a>
+      <a class="jump-link" href="#finding-02">02 · High</a>
+      <a class="jump-link" href="#finding-03">03 · Med</a>
+      <a class="jump-link" href="#finding-04">04 · Med</a>
+      <a class="jump-link" href="#finding-05">05 · Med</a>
+      <a class="jump-link" href="#finding-06">06 · Med</a>
+      <a class="jump-link" href="#finding-07">07 · High</a>
+      <a class="jump-link" href="#finding-08">08 · High</a>
+      <div class="filters" role="group" aria-label="Filter findings">
+        <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All 8</button>
+        <button class="filter-btn" type="button" data-filter="crit" aria-pressed="false">High-Crit (4)</button>
+        <button class="filter-btn" type="button" data-filter="seo" aria-pressed="false">SEO &amp; Index (4)</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="on-cream" style="padding-top:32px">
+    <div class="wrap">
+      <p class="filter-note" hidden></p>
+
+      <!-- 01 -->
+      <article class="finding-card" id="finding-01" data-cat="crit">
+        <div class="finding-num">01<span>Schedule<br>Inconsistency</span></div>
+        <div class="finding-body">
+          <div class="finding-kicker"><span class="chip chip-critical">Critical severity</span><span class="code">Code: ERR-OPS-01</span></div>
+          <h2>Opening hours contradict themselves across pages</h2>
+          <p>Two pages on your own site state two different opening schedules. A client checking before a Sunday visit gets one answer from the pricing page and the opposite from the massage page — and Google reads both.</p>
+          <p class="src">Verified URLs: <a href="https://melzabeautyspa.co.za/massage-spa-soweto-prices-guide/">melzabeautyspa.co.za/massage-spa-soweto-prices-guide/</a> vs <a href="https://melzabeautyspa.co.za/full-body-massage-soweto/">melzabeautyspa.co.za/full-body-massage-soweto/</a></p>
+          <div class="evidence">
+            <h4>What the pages actually say</h4>
+            <div class="evidence-grid">
+              <div class="evidence-box">
+                <p class="ev-label">Source A — Pricing page</p>
+                <p>Mon–Fri: 9:00 AM – 7:00 PM<br>Saturday: 9:00 AM – 5:00 PM<br>Sunday: Closed</p>
+              </div>
+              <div class="evidence-box alt">
+                <p class="ev-label">Source B — Massage &amp; treatments pages</p>
+                <p>Tue–Sun: 9:00 AM – 6:00 PM<br>Monday: Closed<br>Sunday: Open full day</p>
+              </div>
+            </div>
+          </div>
+          <div class="why">
+            <h4>Why it costs bookings</h4>
+            <p>A prospective Sunday client who checks the pricing page assumes you are shut and books elsewhere. A Monday client who trusts the massage page arrives to closed doors. Either way, the contradiction is live on the pages Google shows first — and local search rewards businesses whose hours agree everywhere.</p>
+            <p class="fix-line"><b>Fix:</b> one source of truth for hours — the same schedule on every page, the footer, and the Google Business Profile. <span class="chip chip-critical">Status: Live conflict unresolved</span></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="finding-card" id="finding-02" data-cat="crit">
+        <div class="finding-num">02<span>Stale Content<br>Artifact</span></div>
+        <div class="finding-body">
+          <div class="finding-kicker"><span class="chip chip-high">High severity</span><span class="code">Code: OBS-MKT-02</span></div>
+          <h2>Expired specials still live on homepage</h2>
+          <p>Your homepage still advertises a seasonal special that ended more than a year ago. A second special on the same page carries no year at all, so a visitor cannot tell whether it is current.</p>
+          <p class="src">Verified URL: <a href="https://melzabeautyspa.co.za/">melzabeautyspa.co.za/</a></p>
+          <div class="evidence">
+            <h4>Raw page capture evidence</h4>
+            <blockquote>“Spring Glow Special — Valid 1st–30th September 2025”</blockquote>
+            <p class="quote-note">Observed active and prominent on the homepage in November 2026 — more than a year past its validity window. A separate “September Special R400 — valid until the end of November” states no year, so its status cannot be verified from the page.</p>
+          </div>
+          <div class="why">
+            <h4>Why it costs bookings</h4>
+            <p>First-time visitors judge a business by its homepage. An expired offer in the hero area tells them the site is not maintained — and if the offers are stale, they wonder whether the prices are too. The homepage's best real estate is spent on a discount nobody can claim.</p>
+            <p class="fix-line"><b>Fix:</b> remove the expired special and replace it with an evergreen booking prompt; date every future offer with its year. <span class="chip chip-high">Status: Live on homepage</span></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="finding-card" id="finding-03" data-cat="seo">
+        <div class="finding-num">03<span>Content<br>Duplication</span></div>
+        <div class="finding-body">
+          <div class="finding-kicker"><span class="chip chip-medium">Medium severity</span><span class="code">Code: DOM-DUP-03</span></div>
+          <h2>Duplicated Couples Bliss package block</h2>
+          <p>The entire Couples Bliss package block appears twice on the homepage, word for word — the same offer, the same price, rendered a second time further down the page.</p>
+          <p class="src">Verified URL: <a href="https://melzabeautyspa.co.za/">melzabeautyspa.co.za/</a></p>
+          <div class="evidence">
+            <h4>Both occurrences</h4>
+            <div class="evidence-grid">
+              <div class="evidence-box">
+                <p class="ev-label">Occurrence #1 — mid-page section</p>
+                <p>“Couples Bliss Package — 60min Full Body Hot Stone Massage + Foot Scrub (R799)”</p>
+              </div>
+              <div class="evidence-box alt">
+                <p class="ev-label">Occurrence #2 — further down the same page</p>
+                <p>“Couples Bliss Package — 60min Full Body Hot Stone Massage + Foot Scrub (R799)”</p>
+              </div>
+            </div>
+          </div>
+          <div class="why">
+            <h4>Why it costs bookings</h4>
+            <p>On a phone, the duplicate block doubles the scroll length of your most valuable page and makes the site look unfinished. Search engines also see the same content twice on one URL, which dilutes the page instead of strengthening it.</p>
+            <p class="fix-line"><b>Fix:</b> keep one Couples Bliss block; remove the duplicate. <span class="chip chip-medium">Status: Live on homepage</span></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 -->
+      <article class="finding-card" id="finding-04" data-cat="">
+        <div class="finding-num">04<span>Typography<br>Run-on</span></div>
+        <div class="finding-body">
+          <div class="finding-kicker"><span class="chip chip-medium">Medium severity</span><span class="code">Code: TYP-ERR-04</span></div>
+          <h2>Garbled headline copy in couples section</h2>
+          <p>A headline in the couples section reads as two sentences run together, with a word broken mid-way. It is visible to every visitor who scrolls to your most romantic offer.</p>
+          <p class="src">Verified URL: <a href="https://melzabeautyspa.co.za/">melzabeautyspa.co.za/</a> (couples section)</p>
+          <div class="evidence">
+            <h4>Literal browser render</h4>
+            <blockquote>“Reconnect &amp; Relax Together in Meadowlandsying quality time together”</blockquote>
+            <p class="quote-note">The headline reads as a copy or layout slip — two phrases joined without a break — visible on the live page.</p>
+          </div>
+          <div class="why">
+            <h4>Why it costs bookings</h4>
+            <p>Couples packages (R799) and the Midweek 2-for-1 (R500) are emotional purchases — gifts, anniversaries, dates. A garbled headline on exactly that offer breaks the mood at the moment a visitor is deciding whether to book.</p>
+            <p class="fix-line"><b>Fix:</b> re-author the headline as one clean sentence. <span class="chip chip-medium">Status: Live on the page</span></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 -->
+      <article class="finding-card" id="finding-05" data-cat="seo">
+        <div class="finding-num">05<span>Indexation<br>Failure</span></div>
+        <div class="finding-body">
+          <div class="finding-kicker"><span class="chip chip-medium">Medium severity</span><span class="code">Code: JS-CRAWL-05</span></div>
+          <h2>“Loading your guides...” blank JS block</h2>
+          <p>The Melza Glow Guide blog section depends on JavaScript to render. Until that script runs, the section shows only a loading message — and for search crawlers, the articles behind it may as well not exist.</p>
+          <p class="src">Verified URL: <a href="https://melzabeautyspa.co.za/blog/">melzabeautyspa.co.za/blog/</a></p>
+          <div class="evidence">
+            <h4>What a crawler sees before JavaScript runs</h4>
+            <div class="loader-box">Loading your guides...</div>
+            <p class="quote-note">The blog grid renders only after client-side JavaScript executes. If the script fails — or for a crawler that does not wait — the section is empty: no article titles, no links, nothing indexed.</p>
+          </div>
+          <div class="why">
+            <h4>Why it costs bookings</h4>
+            <p>You published 10+ substantive articles on hyper-pigmentation and body treatments, updated as recently as 20 October 2026. That is real content work — but if search engines cannot read the articles, they cannot send you the readers, and readers cannot become bookings.</p>
+            <p class="fix-line"><b>Fix:</b> render the blog archive as static, pre-rendered HTML so crawlers and visitors see the articles with or without JavaScript. <span class="chip chip-medium">Status: Live on /blog</span></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 -->
+      <article class="finding-card" id="finding-06" data-cat="seo">
+        <div class="finding-num">06<span>NAP Citation<br>Drift</span></div>
+        <div class="finding-body">
+          <div class="finding-kicker"><span class="chip chip-medium">Medium severity</span><span class="code">Code: GEO-NAP-06</span></div>
+          <h2>Address spelling drifts between pages</h2>
+          <p>Your street name is spelled two different ways on your own site. To a local search algorithm, two spellings can look like two different businesses at two different addresses.</p>
+          <p class="src">Verified URL: <a href="https://melzabeautyspa.co.za/contact-us/">melzabeautyspa.co.za/contact-us/</a> and other pages on the same site</p>
+          <div class="evidence">
+            <h4>The two spellings, on your own pages</h4>
+            <div class="evidence-grid">
+              <div class="evidence-box">
+                <p class="ev-label">Most pages &amp; footer</p>
+                <p>“30087 Tshendehulu Street”</p>
+                <p>With an “h” after “Ts”.</p>
+              </div>
+              <div class="evidence-box alt">
+                <p class="ev-label">Another page on the same site</p>
+                <p>“30087 Tsendehulu Str”</p>
+                <p>Missing the “h”, abbreviated “Str”.</p>
+              </div>
+            </div>
+          </div>
+          <div class="why">
+            <h4>Why it costs bookings</h4>
+            <p>Local search ranks businesses on consistency: the same name, address and phone everywhere. When your own pages disagree on the street name, Google's confidence in your location drops — and with it, your place in the local results for “spa Soweto” searches.</p>
+            <p class="fix-line"><b>Fix:</b> standardise on “30087 Tshendehulu Street” everywhere — pages, footer, schema, and every listing. <span class="chip chip-medium">Status: Trivial fix, large local payoff</span></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 07 -->
+      <article class="finding-card" id="finding-07" data-cat="crit">
+        <div class="finding-num">07<span>Conversion<br>Brake</span></div>
+        <div class="finding-body">
+          <div class="finding-kicker"><span class="chip chip-high">High severity</span><span class="code">Code: SOC-PRF-07</span></div>
+          <h2>Fresha 4.4★ rating hidden from your own visitors</h2>
+          <p>Your Fresha profile carries a 4.4★ rating from 5 public reviews — real social proof, already earned. None of it appears anywhere on your own website.</p>
+          <p class="src">Evidence: Fresha public profile (Melza_Beauty), checked 5 Nov 2026</p>
+          <div class="evidence">
+            <h4>Verified Fresha record</h4>
+            <p style="font-family:var(--serif);font-size:28px;color:var(--plum);margin:0 0 8px">4.4★ <span style="font-family:var(--sans);font-size:15px;color:var(--ink)">(5 public reviews)</span></p>
+            <p style="margin:0 0 18px">Zero badges, embeds, or review markup appear on melzabeautyspa.co.za. Two review snippets are visible on Fresha: “Great experience” (29 Jun 2025) and “Experience was lovely, very friendly staff members and a very clean place” (29 Aug 2026).</p>
+            <h4>Competitor vulnerability</h4>
+            <p style="margin:0">Nearby Soweto salons on the same Fresha pages show 4.9★ from 39–83 reviews — displayed where searching clients compare them, before they ever reach your site.</p>
+          </div>
+          <div class="why">
+            <h4>Why it costs bookings</h4>
+            <p>High-value bookings — IV vitamin infusions (R800–R1,300), multi-hour bridal journeys — need trust before price. A visitor comparing a 4.4★ spa with no visible reviews against a 4.9★ spa with dozens has already made the decision.</p>
+            <p class="fix-line"><b>Fix:</b> embed the verified Fresha rating above the booking path and add review markup so the stars can appear in search results. <span class="chip chip-high">Status: Proof exists, unused</span></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 08 -->
+      <article class="finding-card" id="finding-08" data-cat="crit seo">
+        <div class="finding-num">08<span>Dead-End<br>Funnel</span></div>
+        <div class="finding-body">
+          <div class="finding-kicker"><span class="chip chip-high">High severity</span><span class="code">Code: FUN-DRA-08</span></div>
+          <h2>10+ articles last updated 20 Oct 2026 with no booking path</h2>
+          <p>Your blog is the most active part of the site — 10+ published editorial pieces, updated as recently as 20 October 2026. A reader who finishes one reaches the bottom of the page and finds no direct way to book.</p>
+          <p class="src">Verified URL: <a href="https://melzabeautyspa.co.za/blog/">melzabeautyspa.co.za/blog/</a></p>
+          <div class="evidence">
+            <h4>What is missing from the articles</h4>
+            <div class="evidence-grid">
+              <div class="evidence-box">
+                <p class="ev-label">Missing element 1</p>
+                <p>Sticky booking button — no booking action follows the reader down the page.</p>
+              </div>
+              <div class="evidence-box alt">
+                <p class="ev-label">Missing element 2</p>
+                <p>Structured FAQ — no structured answers found on the pages checked, so AI search has nothing to quote.</p>
+              </div>
+              <div class="evidence-box">
+                <p class="ev-label">Missing element 3</p>
+                <p>Local anchors — no links tying articles back to Meadowlands and Soweto service pages.</p>
+              </div>
+              <div class="evidence-box alt">
+                <p class="ev-label">What the content already does</p>
+                <p>10+ articles on skin and body treatments, actively maintained — the hard part is done.</p>
+              </div>
+            </div>
+          </div>
+          <div class="why">
+            <h4>Why it costs bookings</h4>
+            <p>Readers who find your articles through search are the warmest visitors you get — they already trust your expertise. Without a booking path on the page, that trust has nowhere to go, and the visit ends at the bottom of the article.</p>
+            <p class="fix-line"><b>Fix:</b> add a sticky booking button and structured FAQ answers to every article, and link each one to its matching treatment page. <span class="chip chip-high">Status: Content live, conversion missing</span></p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Data integrity band -->
+  <section class="dark">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="dot">●</span> Verified &amp; Unverified</p>
+      <h2 class="reveal">Data Integrity &amp; Forensic Traceability</h2>
+      <p class="lede reveal">We distinguish strictly between hard verified captures and records we could not verify. Anything we could not verify is shown as a placeholder — never as a number we made up.</p>
+      <div class="integrity-grid">
+        <div class="integrity-cell reveal">
+          <h3>URL crawl audit</h3>
+          <p class="mono-line">melzabeautyspa.co.za</p>
+          <p>8 findings documented from live pages, checked 5 November 2026.</p>
+          <span class="ph">Verified: 8 findings</span>
+        </div>
+        <div class="integrity-cell reveal reveal-d1">
+          <h3>Fresha record</h3>
+          <p class="mono-line">Melza_Beauty on Fresha</p>
+          <p>4.4★ rating from 5 public reviews, visible on Fresha category listings.</p>
+          <span class="ph">Verified: public listing</span>
+        </div>
+        <div class="integrity-cell reveal reveal-d2">
+          <h3>Google review count</h3>
+          <p class="mono-line">Google Business Profile</p>
+          <p>No public rating or review count was found in public search for this audit.</p>
+          <span class="ph">[Placeholder] — Not verified</span>
+        </div>
+        <div class="integrity-cell reveal reveal-d3">
+          <h3>Instagram handle</h3>
+          <p class="mono-line">Social profiles</p>
+          <p>Your site mentions social pages but names no handle; no verified handle was found for this audit.</p>
+          <span class="ph">[Placeholder] — Not verified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next phase CTA -->
+  <section class="dark-deep cta-band">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="dot">●</span> Next Phase Ready</p>
+      <h2 class="reveal">Ready to resolve these? See the phased implementation plan.</h2>
+      <p class="lede reveal">Every flaw documented here has a direct remediation step, organised into three tiers — quick wins first, then the proof engine, then full local dominance.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-terra" href="plan.html">Proceed to 03. Fix Plan <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost-light" href="index.html">Re-examine overview</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Official Technical Audit Report</h3>
+        <p>Prepared by Tiyan Digital for <span data-biz>Melza Beauty Spa</span> (30087 Tshendehulu St, Meadowlands, Soweto). Based on a live review of melzabeautyspa.co.za and public Fresha listings, November 2026.</p>
+        <p class="mono-line">Security classification<br>Restricted recipient access</p>
+      </div>
+      <div>
+        <h3>Dossier</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">01 Audit Overview</a></li>
+          <li><a href="findings.html">02 8 Findings</a></li>
+          <li><a href="plan.html">03 Fix Plan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="index.html#checked">Methodology</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Melza Beauty Spa Dossier</span>
+      <span>Prepared by Tiyan Digital · November 2026</span>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
